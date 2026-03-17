@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+:root {
+  --tg-theme-bg-color: #ffffff;
+  --tg-theme-text-color: #000000;
+  --tg-theme-hint-color: #999999;
+  --tg-theme-link-color: #2481cc;
+  --tg-theme-button-color: #2481cc;
+  --tg-theme-button-text-color: #ffffff;
+  --tg-theme-secondary-bg-color: #f0f0f0;
+  --tg-theme-header-bg-color: #ffffff;
+  --tg-theme-section-bg-color: #ffffff;
+  --tg-theme-accent-text-color: #2481cc;
+  --tg-theme-destructive-text-color: #ff3b30;
+  --tg-theme-subtitle-text-color: #999999;
+  --tg-theme-section-separator-color: #e0e0e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--tg-theme-secondary-bg-color);
+  color: var(--tg-theme-text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Telegram-style section cards */
+.tg-section {
+  background-color: var(--tg-theme-section-bg-color);
+  border-top: 0.5px solid var(--tg-theme-section-separator-color);
+  border-bottom: 0.5px solid var(--tg-theme-section-separator-color);
+}
+
+.tg-section-header {
+  color: var(--tg-theme-subtitle-text-color);
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 8px 16px 6px;
+}
+
+/* Telegram-style list items */
+.tg-list-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: var(--tg-theme-section-bg-color);
+  border-bottom: 0.5px solid var(--tg-theme-section-separator-color);
+  transition: background-color 0.15s;
+}
+
+.tg-list-item:active {
+  background-color: var(--tg-theme-secondary-bg-color);
+}
+
+.tg-list-item:last-child {
+  border-bottom: none;
+}
+
+/* Telegram-style button */
+.tg-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background-color: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
+  transition: opacity 0.15s;
+}
+
+.tg-button:active {
+  opacity: 0.7;
+}
+
+.tg-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Telegram-style input */
+.tg-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  background-color: var(--tg-theme-section-bg-color);
+  color: var(--tg-theme-text-color);
+}
+
+.tg-input::placeholder {
+  color: var(--tg-theme-hint-color);
+}
+
+/* Custom scrollbar for the content area */
+.scroll-area {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-area::-webkit-scrollbar {
+  display: none;
+}
