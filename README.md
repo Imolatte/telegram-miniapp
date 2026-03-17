@@ -7,6 +7,10 @@ A demo Telegram Mini App (WebApp) built with React, TypeScript, and Vite. Featur
 ![Vite](https://img.shields.io/badge/Vite-6-purple)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-teal)
 
+## Live Demo
+
+**[https://telegram-miniapp-demo-pi.vercel.app](https://telegram-miniapp-demo-pi.vercel.app)**
+
 ## Features
 
 - **Telegram WebApp API integration** — theme adaptation, haptic feedback, native popups, back button support
